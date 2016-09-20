@@ -13,24 +13,22 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity
+{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
 
-
-    //initialize button
-    Button btnCredit = (Button) findViewById(R.id.creditBtn);
-
-   //btnCredit.setOnClickListener(new View.OnContextClickListener());
-}
-    public void OnClick(View v) {
-        Intent intent = new Intent(MainActivity.this, display_products.class);
-        startActivity(intent);
+    public void OnClick(View v)
+    {
+        //create an even to link the first activity to display products on the second
+        Intent click_intent = new Intent(MainActivity.this, display_products.class);
+        startActivity(click_intent);
     }
 
 
