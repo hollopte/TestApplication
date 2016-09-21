@@ -16,7 +16,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1.22"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:elevation="1dp">
 
         <ImageView
             android:id="@+id/ProdImageView"
@@ -30,8 +31,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/prod1_rating"
             style = "?android:attr/ratingBarStyleSmall"
-            android:numStars = "5"
-            android:rating   = "5"  />
+            />
 
     </LinearLayout>
 
