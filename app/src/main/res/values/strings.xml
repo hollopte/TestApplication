@@ -6,5 +6,10 @@
     <string name="certificates"><![CDATA[Certificates & IRA]]></string>
     <string name="services">Services</string>
 
+    <string name="product_name">Product 1</string>
+    <string name="write_review">Write Review</string>
+    <string name="ck_conf.">I have this product!</string>
+    <string name="Prod_images">image</string>
+
 
 </resources>

@@ -1,7 +1,9 @@
 package com.example.cse498.testapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -35,5 +37,12 @@ public class display_products extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, CreditCards);
         productsList.setAdapter(prod_array);
 
+    }
+
+    public void ProdOnClick(View v)
+    {
+        //create an even to link the first activity to display products on the second
+        //Intent click_intent = new Intent(display_products.this, prod_reviews.class);
+        //startActivity(click_intent);
     }
 }

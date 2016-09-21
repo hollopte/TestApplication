@@ -11,17 +11,31 @@
     android:orientation="horizontal"
     android:weightSum="1">
 
-    <ImageView
-        android:id="@+id/ProdImageView"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:padding="5dp"
-        android:background="@mipmap/creditcards"
-        android:contentDescription="image of each product" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1.22"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/ProdImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/creditcards"
+            android:layout_gravity="center" />
+
+        <RatingBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prod1_rating"
+            android:numStars="5" />
+    </LinearLayout>
 
     <ListView
-             android:layout_width="match_parent"
+             android:layout_width="220dp"
             android:layout_height="match_parent"
             android:id="@+id/list" />
-    </LinearLayout>
+
+</LinearLayout>
 
