@@ -27,11 +27,14 @@
             android:layout_gravity="center" />
 
         <RatingBar
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/prod1_rating"
-            style = "?android:attr/ratingBarStyleSmall"
-            />
+            style = "@style/Widget.AppCompat.RatingBar.Small"
+            android:numStars="5"
+            android:rating="2.0"
+            android:stepSize="1.0"
+            android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
 
