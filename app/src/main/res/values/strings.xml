@@ -45,4 +45,9 @@
 
     <string name="review1">I really had a great experience with this product.
         I have enjoyed every aspect.</string>
+
+    <string name="ratingText">Rating</string>
+    <string name="Submit">Submit</string>
+
+
 </resources>

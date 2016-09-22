@@ -1,47 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="195dp"
         app:srcCompat="@mipmap/creditcards"
-        android:id="@+id/imageView"
-        android:layout_weight="0.13"
-        android:padding="10dp" />
+        android:id="@+id/imageView" />
 
     <TextView
         android:text="Visa Credit Card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
-        android:layout_weight="0"
-        android:gravity="center_horizontal"
+        android:layout_weight=".1"
         style="@style/Base.TextAppearance.AppCompat.Large"
         android:textSize="30sp"
+        android:gravity="center_vertical|center_horizontal"
         android:padding="5dp" />
 
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:weightSum="1">
+
+        <TextView
+            android:text="@string/ratingText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2"
+            android:layout_weight="0.75"
+            android:textSize="36sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:id="@+id/ratingBar"
+            android:isIndicator="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="245dp"
         android:text="@string/review1"
         android:id="@+id/editText"
         android:inputType="textCapSentences|textMultiLine"
         android:maxLines ="4"
         android:maxLength ="2000"
         android:scrollHorizontally="false"
-        android:layout_weight="0.34"
+        android:layout_weight="0.45"
         android:gravity="top|center_vertical"
-        android:padding="5dp"
-        android:layout_margin="5dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp" />
-</LinearLayout>
+        android:textSize="24sp" />
+
+    <Button
+        android:text="@string/Submit"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textSize="30sp"
+        android:layout_weight="0.08"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_row="11"
+        android:layout_column="0" />
+
+
+</GridLayout>
