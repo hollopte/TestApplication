@@ -42,4 +42,7 @@
     <string name="ratingView5">rating</string>
     <string name="prod_review5">I really had a great experience with this product.
         I have enjoyed every aspect.</string>
+
+    <string name="review1">I really had a great experience with this product.
+        I have enjoyed every aspect.</string>
 </resources>

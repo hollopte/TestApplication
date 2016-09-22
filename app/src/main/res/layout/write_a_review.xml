@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/creditcards"
+        android:id="@+id/imageView"
+        android:layout_weight="0.13"
+        android:padding="10dp" />
+
+    <TextView
+        android:text="Visa Credit Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        android:padding="5dp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/review1"
+        android:id="@+id/editText"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLines ="4"
+        android:maxLength ="2000"
+        android:scrollHorizontally="false"
+        android:layout_weight="0.34"
+        android:gravity="top|center_vertical"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp" />
+</LinearLayout>
