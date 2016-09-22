@@ -42,7 +42,7 @@ public class display_products extends Activity{
                 //String Slecteditem= itemname[+position];
                 //Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
                 //create an even to link the first activity to display products on the second
-                Intent click_intent = new Intent(display_products.this, MainActivity.class);
+                Intent click_intent = new Intent(display_products.this,activity_product_ratings.class);
                 startActivity(click_intent);
             }
         });
