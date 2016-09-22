@@ -1,48 +1,46 @@
 package com.example.cse498.testapplication;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
+import android.app.Activity;
+        import android.app.ListActivity;
+        import android.os.Bundle;
+        import android.view.View;
+        import android.widget.AdapterView;
+        import android.widget.AdapterView.OnItemClickListener;
+        import android.widget.ArrayAdapter;
+        import android.widget.ListView;
+        import android.widget.Toast;
 
-import static android.R.attr.id;
 
-public class display_products extends AppCompatActivity {
+public class display_products extends Activity{
 
-    ListView productsList;
-    String[] CreditCards = {"Visa Credit Card", "Visa Plus Credit Card"};
-    String[] Loans = {"Visa Credit Card", "Visa Plus Credit Card"};
-    String[] Accounts = {"Visa Credit Card", "Visa Plus Credit Card"};
-    String[] Certificates_IRAs = {"Visa Credit Card", "Visa Plus Credit Card"};
-    String[] Services = {"Visa Credit Card", "Visa Plus Credit Card"};
+    ListView list;
+    String[] itemname ={
+            "Credit Card",
+            "Credit Card Visa",
+    };
 
-    Integer[] img_CC = {R.mipmap.creditcards};
-
-    ArrayAdapter<String> prod_array;
-
+    Integer[] imgid={
+            R.mipmap.creditcards,
+            R.mipmap.creditcards2
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_products);
 
+        CustomListAdapter adapter=new CustomListAdapter(this, itemname, imgid);
+        list=(ListView)findViewById(R.id.list);
+        list.setAdapter(adapter);
 
+        list.setOnItemClickListener(new OnItemClickListener() {
 
-        productsList = (ListView) findViewById(R.id.list);
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                String Slecteditem= itemname[+position];
+                Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
 
-
-        prod_array = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1, CreditCards);
-        productsList.setAdapter(prod_array);
-
-    }
-
-    public void ProdOnClick(View v)
-    {
-        //create an even to link the first activity to display products on the second
-        //Intent click_intent = new Intent(display_products.this, prod_reviews.class);
-        //startActivity(click_intent);
+            }
+        });
     }
 }
