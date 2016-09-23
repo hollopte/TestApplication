@@ -56,6 +56,9 @@
     <string name="TextView1">Text1</string>
     <string name="TextView2">Text2</string>
     <string name="ReviewImage">ReviewImage</string>
+    <string name="details">details</string>
+    <string name="Desctiption">description</string>
+    <string name="RatingImage">RatingImage</string>
 
 
 </resources>
