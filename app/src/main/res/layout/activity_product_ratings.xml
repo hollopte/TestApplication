@@ -2,7 +2,6 @@
 
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbarSize="100dp">
@@ -32,29 +31,25 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="0"
             android:id="@+id/ProdReview_lay"
             android:orientation="vertical">
-            android:orientation = "verticle"
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="1"
-                android:layout_column="0"
+
                 android:id="@+id/ProdReview1"
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:layout_marginBottom="20dp">
-                android:orientation = "verticle"
+
 
                 <TextView
                     android:text="@string/ProductName1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/Product1"
-                    android:layout_weight="1" />
+                     />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -64,27 +59,25 @@
                     android:id="@+id/ReviewText1"
                     android:text="@string/prod_review1"
                     android:gravity="top"
-                    android:layout_weight="1" />
+                    />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="1"
-                android:layout_column="0"
+
                 android:id="@+id/ProdReview2"
                 android:orientation="vertical"
-                android:layout_weight="1"
                 android:layout_marginBottom="20dp">
-                android:orientation = "verticle"
+
 
                 <TextView
                     android:text="@string/ProductName2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/Product2"
-                    android:layout_weight="1" />
+                    />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -94,27 +87,25 @@
                     android:id="@+id/ReviewText2"
                     android:text="@string/prod_review1"
                     android:gravity="top"
-                    android:layout_weight="1" />
+                    />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="1"
-                android:layout_column="0"
                 android:id="@+id/ProdReview3"
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:layout_marginBottom="20dp">
-                android:orientation = "verticle"
+
 
                 <TextView
                     android:text="@string/ProductName3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/Product3"
-                    android:layout_weight="1" />
+                     />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -123,28 +114,25 @@
                     android:ems="10"
                     android:id="@+id/ReviewText3"
                     android:text="@string/prod_review3"
-                    android:gravity="top"
-                    android:layout_weight="1" />
+                    android:gravity="top" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="1"
-                android:layout_column="0"
                 android:id="@+id/ProdReview4"
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:layout_marginBottom="20dp">
-                android:orientation = "verticle"
+
 
                 <TextView
                     android:text="@string/ProductName4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/Product4"
-                    android:layout_weight="1" />
+                     />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -153,8 +141,7 @@
                     android:ems="10"
                     android:id="@+id/ReviewText4"
                     android:text="@string/prod_review4"
-                    android:gravity="top"
-                    android:layout_weight="1" />
+                    android:gravity="top" />
 
             </LinearLayout>
 
@@ -171,7 +158,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/Product5"
-                    android:layout_weight="1" />
+                     />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -180,8 +167,7 @@
                     android:ems="10"
                     android:id="@+id/ReviewText"
                     android:text="@string/prod_review5"
-                    android:gravity="top"
-                    android:layout_weight="1" />
+                    android:gravity="top" />
             </LinearLayout>
 
         </LinearLayout>
@@ -190,28 +176,28 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_row="29"
-            android:layout_column="0"
             android:layout_marginTop="100dp">
 
             <Button
-                android:text="See all Reviews"
+                android:text="@string/See_All_Reviews"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/all_reviews"
                 android:layout_weight="1"
-                android:layout_gravity="bottom" />
+                android:layout_gravity="bottom"
+                style="?android:attr/buttonBarButtonStyle"
+                 />
 
             <Button
-                android:text="Write Review"
+                android:text="@string/Write_Review"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/write_review"
-                android:layout_row="0"
-                android:layout_column="3"
-                android:layout_gravity="bottom|right"
+                android:layout_gravity="bottom|end"
                 android:layout_weight="1"
-                android:onClick="OnClick" />
+                android:onClick="OnClick"
+                style="?android:attr/buttonBarButtonStyle"
+                />
 
         </LinearLayout>
 

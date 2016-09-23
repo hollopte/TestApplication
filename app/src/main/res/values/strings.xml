@@ -47,6 +47,15 @@
 
     <string name="ratingText">Rating</string>
     <string name="Submit">Submit</string>
+    <string name="See_All_Reviews">See All Reviews</string>
+    <string name="Write_Review">Write Review</string>
+    <string name="Visa_Credit_Card">Visa Credit Card</string>
+    <string name="CreditCardImage">Credit Card Image</string>
+    <string name="TextView">TextView</string>
+    <string name="ProductName">ProductName</string>
+    <string name="TextView1">Text1</string>
+    <string name="TextView2">Text2</string>
+    <string name="ReviewImage">ReviewImage</string>
 
 
 </resources>
