@@ -2,14 +2,16 @@
 
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:paddingTop="1000dp">
 
 
-    <GridLayout
+    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/ProductReview"
         android:padding="15dp">
 
@@ -210,6 +212,6 @@
 
         </LinearLayout>
 
-    </GridLayout>
+    </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
