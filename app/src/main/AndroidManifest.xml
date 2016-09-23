@@ -24,7 +24,8 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".activity_product_ratings"></activity>
+        <activity android:name=".activity_product_ratings" />
+        <activity android:name=".activity_write_review"></activity>
     </application>
 
 </manifest>
