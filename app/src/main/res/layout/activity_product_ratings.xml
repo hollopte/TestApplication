@@ -210,7 +210,8 @@
                 android:layout_row="0"
                 android:layout_column="3"
                 android:layout_gravity="bottom|right"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:onClick="OnClick" />
 
         </LinearLayout>
 

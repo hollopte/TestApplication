@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TestApplication</string>
+    <string name="app_name">MSUFCU Product Ratings</string>
     <string name="credit_cards">Credit Cards</string>
     <string name="loans">Loans</string>
     <string name="accounts">accounts</string>
