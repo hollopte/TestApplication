@@ -32,7 +32,7 @@ public class activity_write_review extends AppCompatActivity {
         } else if (id == R.id.ViewCategories){
             //Toast.makeText(getApplicationContext(), "item1 option hit!", Toast.LENGTH_SHORT).show();
             return true;
-        } else if (id == R.id.Prefrences){
+        } else if (id == R.id.Preferences){
             //Toast.makeText(getApplicationContext(), "item2 otion hit!", Toast.LENGTH_SHORT).show();
             return true;
         } else if (id == R.id.Logout){
