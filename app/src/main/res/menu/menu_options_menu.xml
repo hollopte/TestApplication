@@ -4,8 +4,8 @@
     android:title="@string/ViewProducts"/>
     <item android:id="@+id/ViewCategories"
         android:title="@string/categories"/>
-    <item android:id="@+id/Prefrences"
-        android:title="@string/Prefrences"/>
+    <item android:id="@+id/Preferences"
+        android:title="@string/Preferences"/>
     <item android:id="@+id/Logout"
         android:title="@string/Logout"/>
 </menu>

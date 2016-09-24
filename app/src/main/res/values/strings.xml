@@ -13,31 +13,31 @@
 
 
     <string name="top_5_reviews1">Top 5 Reviews</string>
-    <string name="ProductName1">Product1</string>
+    <string name="MemberName1">Member1</string>
     <string name="ratingView1">rating</string>
     <string name="prod_review1">I really had a great experience with this product.
         I have enjoyed every aspect.</string>
 
     <string name="top_5_review2">Top 5 Reviews</string>
-    <string name="ProductName2">Product2</string>
+    <string name="MemberName2">Member2</string>
     <string name="ratingView2">rating</string>
     <string name="prod_review2">I really had a great experience with this product.
         I have enjoyed every aspect.</string>
 
     <string name="top_5_reviews3">Top 5 Reviews</string>
-    <string name="ProductName3">Product3</string>
+    <string name="MemberName3">Member3</string>
     <string name="ratingView3">rating</string>
     <string name="prod_review3">I really had a great experience with this product.
         I have enjoyed every aspect.</string>
 
     <string name="top_5_reviews4">Top 5 Reviews</string>
-    <string name="ProductName4">Product4</string>
+    <string name="MemberName4">Member4</string>
     <string name="ratingView4">rating</string>
     <string name="prod_review4">I really had a great experience with this product.
         I have enjoyed every aspect.</string>
 
     <string name="top_5_reviews5">Top 5 Reviews</string>
-    <string name="ProductName5">Product5</string>
+    <string name="MemberName5">Member5</string>
     <string name="ratingView5">rating</string>
     <string name="prod_review5">I really had a great experience with this product.
         I have enjoyed every aspect.</string>
@@ -57,11 +57,12 @@
     <string name="TextView2">Text2</string>
     <string name="ReviewImage">ReviewImage</string>
     <string name="details">details</string>
-    <string name="Desctiption">description</string>
+    <string name="Description">description</string>
     <string name="RatingImage">RatingImage</string>
+
     <string name="ViewProducts"><![CDATA[View All Products & Services]]></string>
     <string name="categories">View Categories</string>
-    <string name="Prefrences">Prefrences</string>
+    <string name="Preferences">Preferences</string>
     <string name="Logout">Logout</string>
 
 

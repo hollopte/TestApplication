@@ -31,7 +31,7 @@
             android:contentDescription="@string/RatingImage" />
 
         <TextView
-            android:text="@string/Desctiption"
+            android:text="@string/Description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Description"
@@ -44,6 +44,7 @@
             android:id="@+id/Details"
             android:padding="10dp"
             android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp" />
 
         <FrameLayout
@@ -78,10 +79,10 @@
 
 
                 <TextView
-                    android:text="@string/ProductName1"
+                    android:text="@string/MemberName1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Product1"
+                    android:id="@+id/Member1"
                     android:padding="5dp" />
 
                 <TextView
@@ -106,10 +107,10 @@
 
 
                 <TextView
-                    android:text="@string/ProductName2"
+                    android:text="@string/MemberName2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Product2"
+                    android:id="@+id/Member2"
                     android:padding="5dp" />
 
                 <TextView
@@ -134,10 +135,10 @@
 
 
                 <TextView
-                    android:text="@string/ProductName3"
+                    android:text="@string/MemberName3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Product3"
+                    android:id="@+id/Member3"
                     android:padding="5dp" />
 
                 <TextView
@@ -162,10 +163,10 @@
 
 
                 <TextView
-                    android:text="@string/ProductName4"
+                    android:text="@string/MemberName4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Product4"
+                    android:id="@+id/Member4"
                     android:padding="5dp" />
 
                 <TextView
@@ -189,10 +190,10 @@
                 android:layout_marginBottom="20dp">
 
                 <TextView
-                    android:text="@string/ProductName5"
+                    android:text="@string/MemberName5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Product5"
+                    android:id="@+id/Member5"
                     android:padding="5dp" />
 
                 <TextView
@@ -221,6 +222,7 @@
                 android:id="@+id/all_reviews"
                 android:layout_weight="1"
                 android:layout_gravity="bottom"
+                android:onClick="OnClickAllReviews"
                 style="?android:attr/buttonBarButtonStyle"
                  />
 
@@ -231,7 +233,7 @@
                 android:id="@+id/write_review"
                 android:layout_gravity="bottom|end"
                 android:layout_weight="1"
-                android:onClick="OnClick"
+                android:onClick="OnClickWriteReview"
                 style="?android:attr/buttonBarButtonStyle"
                 />
 
