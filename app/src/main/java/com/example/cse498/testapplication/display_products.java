@@ -11,6 +11,8 @@ import android.view.View;
         import android.widget.ArrayAdapter;
         import android.widget.ListView;
         import android.widget.Toast;
+import android.view.Menu;
+import android.view.MenuItem;
 
 
 public class display_products extends AppCompatActivity {
@@ -49,6 +51,37 @@ public class display_products extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_options_menu,menu);
+        return true;
+    }
+
+    public boolean onOptionsItemsSelected(MenuItem item){
+        int id = item.getItemId();
+
+        if (id == R.id.home){
+
+            display_products.this.finish();
+            return true;
+        } else if (id == R.id.ViewAllProducts){
+            //Toast.makeText(getApplicationContext(), "Settings option hit!", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (id == R.id.ViewCategories){
+            //Toast.makeText(getApplicationContext(), "item1 option hit!", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (id == R.id.Prefrences){
+            //Toast.makeText(getApplicationContext(), "item2 otion hit!", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (id == R.id.Logout){
+            //Toast.makeText(getApplicationContext(), "item3 option hit!", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+
+
+    }
 
 
 }
