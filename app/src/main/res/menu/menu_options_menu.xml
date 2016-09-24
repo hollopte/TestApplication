@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/ViewAllProducts"
+    android:title="@string/ViewProducts"/>
+    <item android:id="@+id/ViewCategories"
+        android:title="@string/categories"/>
+    <item android:id="@+id/Prefrences"
+        android:title="@string/Prefrences"/>
+    <item android:id="@+id/Logout"
+        android:title="@string/Logout"/>
+</menu>

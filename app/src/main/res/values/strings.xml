@@ -59,6 +59,10 @@
     <string name="details">details</string>
     <string name="Desctiption">description</string>
     <string name="RatingImage">RatingImage</string>
+    <string name="ViewProducts"><![CDATA[View All Products & Services]]></string>
+    <string name="categories">View Categories</string>
+    <string name="Prefrences">Prefrences</string>
+    <string name="Logout">Logout</string>
 
 
 </resources>
