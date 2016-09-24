@@ -13,17 +13,10 @@ public class activity_product_ratings extends AppCompatActivity {
         setContentView(R.layout.activity_product_ratings);
     }
 
-    public void OnClickWriteReview(View v)
+    public void OnClick(View v)
     {
         //create an even to link the first activity to display products on the second
         Intent click_intent = new Intent(activity_product_ratings.this, activity_write_review.class);
-        startActivity(click_intent);
-    }
-
-    public void OnClickAllReviews(View v)
-    {
-        //create an even to link the first activity to display products on the second
-        Intent click_intent = new Intent(activity_product_ratings.this, activity_all_reviews.class);
         startActivity(click_intent);
     }
 }
