@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class activity_write_review extends AppCompatActivity {
@@ -49,5 +50,12 @@ public class activity_write_review extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
 
+    }
+
+    public void OnClickSubmit(View v)
+    {
+        //create an even to link the first activity to display products on the second
+        Intent click_intent = new Intent(activity_write_review.this, activity_all_reviews.class);
+        startActivity(click_intent);
     }
 }
