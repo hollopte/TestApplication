@@ -3,6 +3,8 @@ package com.example.cse498.testapplication;
 /**
  * Created by cse498 on 9/21/16.
  * Using www.androidinterview.com/android-custom-listview-with-image-and-text-using-arrayadapter/
+ *      Android Custom Listview with Image and Text using ArrayAdapter
+ *      Posted by	R.K.Kanojia
  */
 
 import android.app.Activity;
