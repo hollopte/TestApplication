@@ -43,7 +43,7 @@ public class display_products extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapterspin = ArrayAdapter.createFromResource(this,
                 R.array.sort_by, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
-        adapterspin.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinner.setAdapter(adapterspin);
 
