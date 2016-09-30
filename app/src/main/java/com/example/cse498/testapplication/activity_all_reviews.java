@@ -7,7 +7,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class activity_all_reviews extends AppCompatActivity {
@@ -39,6 +41,15 @@ public class activity_all_reviews extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_reviews);
+
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapterspin = ArrayAdapter.createFromResource(this,
+                R.array.sort_by, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        adapterspin.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        spinner.setAdapter(adapterspin);
 
         CustomListAdapter adapter=new CustomListAdapter(this, itemname, imgid);
         list=(ListView)findViewById(R.id.list);

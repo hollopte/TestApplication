@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/searchProducts"
             android:layout_gravity="left|fill_horizontal|center|start"
-            android:layout_weight="0.75">
+            android:layout_weight="0.96">
 
         </SearchView>
 
