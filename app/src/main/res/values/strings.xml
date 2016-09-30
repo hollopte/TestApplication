@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MSUFCU Product Ratings</string>
+    <string name="app_name">MSUFCU Member Reviews</string>
     <string name="credit_cards">Credit Cards</string>
     <string name="loans">Loans</string>
     <string name="accounts">accounts</string>
@@ -64,6 +64,9 @@
     <string name="categories">View Categories</string>
     <string name="Preferences">Preferences</string>
     <string name="Logout">Logout</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
 
 
 </resources>

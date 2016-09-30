@@ -80,6 +80,8 @@ public class display_products extends AppCompatActivity {
             return true;
         } else if (id == R.id.Logout){
             Toast.makeText(getApplicationContext(), "Not Implemented Yet!", Toast.LENGTH_SHORT).show();
+            Intent click_intent = new Intent(display_products.this, activity_login.class);
+            startActivity(click_intent);
             return true;
         }
 

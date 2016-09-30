@@ -26,7 +26,8 @@
 
         <activity android:name=".activity_product_ratings" />
         <activity android:name=".activity_write_review" />
-        <activity android:name=".activity_all_reviews"></activity>
+        <activity android:name=".activity_all_reviews" />
+        <activity android:name=".activity_login"></activity>
     </application>
 
 </manifest>
