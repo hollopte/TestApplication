@@ -68,5 +68,12 @@
     <string name="password">password</string>
     <string name="login">Login</string>
 
+    <string-array name="sort_by">
+        <item>Sort By</item>
+        <item>A-Z</item>
+        <item>Rating</item>
+        <item>User</item>
+    </string-array>
+
 
 </resources>

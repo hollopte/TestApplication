@@ -10,7 +10,8 @@ import android.view.View;
         import android.widget.AdapterView.OnItemClickListener;
         import android.widget.ArrayAdapter;
         import android.widget.ListView;
-        import android.widget.Toast;
+import android.widget.Spinner;
+import android.widget.Toast;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -36,6 +37,15 @@ public class display_products extends AppCompatActivity {
         CustomListAdapter adapter=new CustomListAdapter(this, itemname, imgid);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
+
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapterspin = ArrayAdapter.createFromResource(this,
+                R.array.sort_by, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        spinner.setAdapter(adapterspin);
 
         list.setOnItemClickListener(new OnItemClickListener() {
 
@@ -79,7 +89,7 @@ public class display_products extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Not Implemented Yet!", Toast.LENGTH_SHORT).show();
             return true;
         } else if (id == R.id.Logout){
-            Toast.makeText(getApplicationContext(), "Not Implemented Yet!", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(), "Not Implemented Yet!", Toast.LENGTH_SHORT).show();
             Intent click_intent = new Intent(display_products.this, activity_login.class);
             startActivity(click_intent);
             return true;

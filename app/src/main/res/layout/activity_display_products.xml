@@ -6,10 +6,29 @@
     android:orientation="vertical"
     tools:context="com.example.cse498.testapplication.display_products" >
 
-    <SearchView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_height="wrap_content"
-        android:id="@+id/searchProducts" />
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchProducts"
+            android:layout_gravity="left|fill_horizontal|center|start"
+            android:layout_weight="0.75">
+
+        </SearchView>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:gravity="center_vertical|fill_horizontal|start"
+            android:layout_gravity="right|center|end" />
+
+    </LinearLayout>
 
     <ListView
         android:id="@+id/list"
