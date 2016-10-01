@@ -44,7 +44,9 @@ public class activity_product_ratings extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Not Implemented Yet!", Toast.LENGTH_SHORT).show();
             return true;
         } else if (id == R.id.Logout){
-            Toast.makeText(getApplicationContext(), "Not Implemented Yet!", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(), "Not Implemented Yet!", Toast.LENGTH_SHORT).show();
+            Intent click_intent = new Intent(activity_product_ratings.this, activity_login.class);
+            startActivity(click_intent);
             return true;
         }
 
