@@ -26,27 +26,27 @@ public class activity_product_ratings extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
 
-        if (id == R.id.home){
-
-            activity_product_ratings.this.finish();
-            return true;
-        } else if (id == R.id.ViewAllProducts){
+        if (id == R.id.ViewAllProducts){
             //Toast.makeText(getApplicationContext(), "Settings option hit!", Toast.LENGTH_SHORT).show();
             Intent click_intent = new Intent(activity_product_ratings.this, display_products.class);
             startActivity(click_intent);
+            //activity_product_ratings.this.finish();
             return true;
         } else if (id == R.id.ViewCategories){
             //Toast.makeText(getApplicationContext(), "item1 option hit!", Toast.LENGTH_SHORT).show();
             Intent click_intent = new Intent(activity_product_ratings.this, MainActivity.class);
             startActivity(click_intent);
+            //activity_product_ratings.this.finish();
             return true;
         } else if (id == R.id.Preferences){
             Toast.makeText(getApplicationContext(), "Not Implemented Yet!", Toast.LENGTH_SHORT).show();
+            //activity_product_ratings.this.finish();
             return true;
         } else if (id == R.id.Logout){
             //Toast.makeText(getApplicationContext(), "Not Implemented Yet!", Toast.LENGTH_SHORT).show();
             Intent click_intent = new Intent(activity_product_ratings.this, activity_login.class);
             startActivity(click_intent);
+            //activity_product_ratings.this.finish();
             return true;
         }
 

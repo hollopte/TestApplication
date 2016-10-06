@@ -67,7 +67,8 @@
     <string name="username">username</string>
     <string name="password">password</string>
     <string name="login">Login</string>
-    <string name = "logo" > msufculogo</string>
+    <string name="logo"> msufculogo</string>
+    <string name = "Get">Get</string>
 
     <string-array name="sort_by">
         <item>Sort By</item>

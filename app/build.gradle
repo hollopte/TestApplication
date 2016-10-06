@@ -26,4 +26,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-appindexing:9.6.1'
     compile 'com.android.support:design:24.2.1'
     compile 'com.android.support:support-v4:24.2.1'
+
+    //used for volley in connecting to database
+    //compile 'com.android.volley:volley:1.0.0'
 }

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cse498.testapplication">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
@@ -27,7 +29,7 @@
         <activity android:name=".activity_product_ratings" />
         <activity android:name=".activity_write_review" />
         <activity android:name=".activity_all_reviews" />
-        <activity android:name=".activity_login"/>
+        <activity android:name=".activity_login" />
     </application>
 
 </manifest>

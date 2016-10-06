@@ -23,7 +23,8 @@
         android:layout_weight="1"
         android:drawableTop="@mipmap/creditcards"
         android:background="@color/colorPrimary"
-         />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <Button
         android:layout_width="match_parent"
@@ -35,7 +36,8 @@
         android:layout_weight="1"
         android:drawableTop="@mipmap/car_icon"
         android:background="@color/colorPrimary"
-         />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <Button
         android:layout_width="match_parent"
@@ -47,7 +49,8 @@
         android:layout_weight="1"
         android:drawableTop="@mipmap/openaccount"
         android:background="@color/colorPrimary"
-         />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <Button
         android:layout_width="match_parent"
@@ -59,7 +62,8 @@
         android:layout_weight="1"
         android:drawableTop="@mipmap/house_icon"
         android:background="@color/colorPrimary"
-         />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <Button
         android:layout_width="match_parent"
@@ -71,5 +75,6 @@
         android:layout_weight="1"
         android:drawableTop="@mipmap/services"
         android:background="@color/colorPrimary"
-        />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 </LinearLayout>
