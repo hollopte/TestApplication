@@ -14,8 +14,8 @@ import android.widget.Toast;
 
 public class activity_all_reviews extends AppCompatActivity {
 
-    ListView list;
-    String[] itemname ={
+    private ListView list;
+    private String[] itemname ={
             "Member 1",
             "Member 2",
             "Member 3",
@@ -26,7 +26,7 @@ public class activity_all_reviews extends AppCompatActivity {
             "Member 8"
     };
 
-    Integer[] imgid={
+    private Integer[] imgid={
             R.mipmap.awsomesparty,
             R.mipmap.awsomesparty,
             R.mipmap.awsomesparty,

@@ -18,13 +18,13 @@ import android.view.MenuItem;
 
 public class display_products extends AppCompatActivity {
 
-    ListView list;
-    String[] itemname ={
+    private ListView list;
+    private String[] itemname ={
             "Credit Card",
             "Credit Card Visa",
     };
 
-    Integer[] imgid={
+    private Integer[] imgid={
             R.mipmap.creditcards,
             R.mipmap.creditcards2
     };

@@ -2,30 +2,30 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
+    android:id="@+id/RatingPageLayout"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:id="@+id/RatingPageLayout"
     android:padding="5dp">
 
     <TextView
         android:text="@string/Visa_Credit_Card"
+        android:id="@+id/VisaCreditCardText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/VisaCreditCardText"
-
+        android:gravity="center_vertical|center_horizontal"
         style="@style/Base.TextAppearance.AppCompat.Large"
         android:textSize="30sp"
-        android:gravity="center_vertical|center_horizontal"
         android:padding="5dp" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="195dp"
+        android:layout_width="214dp"
         app:srcCompat="@mipmap/creditcards"
         android:id="@+id/VisaImage"
-        android:contentDescription="@string/CreditCardImage" />
+        android:contentDescription="@string/CreditCardImage"
+        android:layout_height="120dp"
+        android:layout_gravity="center_vertical|center_horizontal|center" />
 
 
     <TextView
@@ -35,8 +35,7 @@
         android:id="@+id/RatingText"
         android:textSize="36sp"
         android:gravity="center_vertical|center_horizontal"
-        android:layout_marginRight="5dp"
-        android:layout_marginEnd="5dp"/>
+        android:layout_margin="5dp" />
 
     <RatingBar
         android:layout_width="wrap_content"
@@ -44,24 +43,23 @@
         android:isIndicator="false"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_marginBottom="10dp"
         android:stepSize="1.0" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="281dp"
         android:layout_height="wrap_content"
         android:text="@string/review1"
         android:id="@+id/ReviewText"
         android:inputType="textCapSentences|textMultiLine"
-        android:maxLines ="4"
-        android:maxLength ="2000"
+        android:maxLines ="3"
+        android:maxLength ="1000"
         android:scrollHorizontally="false"
         android:textSize="24sp"
         android:padding="5dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="5dp" />
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        />
 
     <Button
         android:text="@string/Submit"
@@ -70,10 +68,14 @@
         android:id="@+id/SubmitButton"
         android:textSize="30sp"
         android:gravity="center"
-        android:layout_gravity="center"
+        android:layout_gravity="bottom|center"
         android:layout_row="11"
         android:layout_column="0"
-        android:onClick="OnClickSubmit" />
+        android:onClick="OnClickSubmit"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
 
 
 </GridLayout>

@@ -3,9 +3,14 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ProductViews"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbarSize="100dp">
+    android:background="@color/colorPrimary"
+    android:scrollbarSize="100dp"
+    tools:ignore="Overdraw">
 
 
     <LinearLayout
@@ -17,41 +22,47 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:text="@string/ProductName"
             android:layout_height="match_parent"
+            android:text="@string/ProductName"
+            android:id="@+id/ProductName"
             android:gravity="center_vertical|center_horizontal"
             android:textSize="24sp"
-            android:id="@+id/ProductName" />
+             />
 
         <ImageView
+            android:contentDescription="@string/RatingImage"
             android:layout_width="match_parent"
             app:srcCompat="@mipmap/creditcards"
             android:id="@+id/imageView"
             android:layout_height="150dp"
-            android:contentDescription="@string/RatingImage" />
+             />
 
         <TextView
             android:text="@string/Description"
+            android:id="@+id/Description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Description"
-            android:padding="10dp" />
+            android:padding="10dp"
+            />
 
         <TextView
             android:text="@string/details"
+            android:id="@+id/Details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Details"
+
             android:padding="10dp"
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="20dp"
+            />
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:padding="10dp">
+            android:padding="10dp"
+            >
 
             <TextView
                 android:text="@string/top_5_reviews1"
@@ -59,14 +70,16 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/top_prod_reviews"
                 android:layout_gravity="center"
-                android:textSize = "20sp" />
+                android:textSize = "20sp"
+                />
         </FrameLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/ProdReview_lay"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -75,7 +88,8 @@
                 android:id="@+id/ProdReview1"
                 android:orientation="vertical"
                 android:layout_weight="1"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="20dp"
+                >
 
 
                 <TextView
@@ -83,45 +97,48 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/Member1"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType=""
-                    android:ems="10"
                     android:id="@+id/ReviewText1"
                     android:text="@string/prod_review1"
+
+                    android:ems="10"
                     android:gravity="top"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
                 android:id="@+id/ProdReview2"
                 android:orientation="vertical"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="20dp"
+                >
 
 
                 <TextView
                     android:text="@string/MemberName2"
+                    android:id="@+id/Member2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Member2"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType=""
-                    android:ems="10"
                     android:id="@+id/ReviewText2"
                     android:text="@string/prod_review1"
                     android:gravity="top"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    android:ems="10"
+                    />
 
             </LinearLayout>
 
@@ -131,7 +148,8 @@
                 android:id="@+id/ProdReview3"
                 android:orientation="vertical"
                 android:layout_weight="1"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="20dp"
+                >
 
 
                 <TextView
@@ -139,17 +157,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/Member3"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType=""
-                    android:ems="10"
-                    android:id="@+id/ReviewText3"
                     android:text="@string/prod_review3"
+                    android:id="@+id/ReviewText3"
+
+                    android:ems="10"
                     android:gravity="top"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    />
 
             </LinearLayout>
 
@@ -159,25 +179,27 @@
                 android:id="@+id/ProdReview4"
                 android:orientation="vertical"
                 android:layout_weight="1"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="20dp"
+                >
 
 
                 <TextView
                     android:text="@string/MemberName4"
+                    android:id="@+id/Member4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Member4"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType=""
-                    android:ems="10"
-                    android:id="@+id/ReviewText4"
                     android:text="@string/prod_review4"
+                    android:id="@+id/ReviewText4"
+                    android:ems="10"
                     android:gravity="top"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    />
 
             </LinearLayout>
 
@@ -185,55 +207,57 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:id="@+id/ProdReview5"
-                android:layout_marginBottom="20dp">
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                >
 
                 <TextView
                     android:text="@string/MemberName5"
+                    android:id="@+id/Member5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Member5"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType=""
-                    android:ems="10"
                     android:id="@+id/ReviewText"
                     android:text="@string/prod_review5"
+                    android:ems="10"
                     android:gravity="top"
-                    android:padding="5dp" />
+                    android:padding="5dp"
+                    />
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp">
+            android:layout_marginTop="100dp"
+            >
 
             <Button
                 android:text="@string/See_All_Reviews"
+                android:id="@+id/all_reviews"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/all_reviews"
-                android:layout_weight="1"
-                android:layout_gravity="bottom"
                 android:onClick="OnClickAllReviews"
+                android:layout_weight="1"
                 style="?android:attr/buttonBarButtonStyle"
-                 />
+                android:layout_gravity="center_horizontal" />
 
             <Button
                 android:text="@string/Write_Review"
+                android:id="@+id/write_review"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/write_review"
-                android:layout_gravity="bottom|end"
-                android:layout_weight="1"
                 android:onClick="OnClickWriteReview"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_weight="1"
                 style="?android:attr/buttonBarButtonStyle"
                 />
 

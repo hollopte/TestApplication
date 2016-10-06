@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">MSUFCU Member Reviews</string>
     <string name="credit_cards">Credit Cards</string>
     <string name="loans">Loans</string>
@@ -6,39 +6,39 @@
     <string name="certificates"><![CDATA[Certificates & IRA]]></string>
     <string name="services">Services</string>
 
-    <string name="product_name">Product 1</string>
-    <string name="write_review">Write Review</string>
+    <string name="product_name" tools:ignore="UnusedResources">Product 1</string>
+    <string name="write_review" tools:ignore="UnusedResources">Write Review</string>
 
     <string name="Prod_images">image</string>
 
 
     <string name="top_5_reviews1">Top 5 Reviews</string>
     <string name="MemberName1">Member1</string>
-    <string name="ratingView1">rating</string>
+    <string name="ratingView1" tools:ignore="UnusedResources">rating</string>
     <string name="prod_review1">I really had a great experience with this product.
         I have enjoyed every aspect.</string>
 
-    <string name="top_5_review2">Top 5 Reviews</string>
+    <string name="top_5_review2" tools:ignore="UnusedResources">Top 5 Reviews</string>
     <string name="MemberName2">Member2</string>
-    <string name="ratingView2">rating</string>
-    <string name="prod_review2">I really had a great experience with this product.
+    <string name="ratingView2" tools:ignore="UnusedResources">rating</string>
+    <string name="prod_review2" tools:ignore="UnusedResources">I really had a great experience with this product.
         I have enjoyed every aspect.</string>
 
-    <string name="top_5_reviews3">Top 5 Reviews</string>
+    <string name="top_5_reviews3" tools:ignore="UnusedResources">Top 5 Reviews</string>
     <string name="MemberName3">Member3</string>
-    <string name="ratingView3">rating</string>
+    <string name="ratingView3" tools:ignore="UnusedResources">rating</string>
     <string name="prod_review3">I really had a great experience with this product.
         I have enjoyed every aspect.</string>
 
-    <string name="top_5_reviews4">Top 5 Reviews</string>
+    <string name="top_5_reviews4" tools:ignore="UnusedResources">Top 5 Reviews</string>
     <string name="MemberName4">Member4</string>
-    <string name="ratingView4">rating</string>
+    <string name="ratingView4" tools:ignore="UnusedResources">rating</string>
     <string name="prod_review4">I really had a great experience with this product.
         I have enjoyed every aspect.</string>
 
-    <string name="top_5_reviews5">Top 5 Reviews</string>
+    <string name="top_5_reviews5" tools:ignore="UnusedResources">Top 5 Reviews</string>
     <string name="MemberName5">Member5</string>
-    <string name="ratingView5">rating</string>
+    <string name="ratingView5" tools:ignore="UnusedResources">rating</string>
     <string name="prod_review5">I really had a great experience with this product.
         I have enjoyed every aspect.</string>
 
@@ -53,9 +53,9 @@
     <string name="CreditCardImage">Credit Card Image</string>
     <string name="TextView">TextView</string>
     <string name="ProductName">ProductName</string>
-    <string name="TextView1">Text1</string>
-    <string name="TextView2">Text2</string>
-    <string name="ReviewImage">ReviewImage</string>
+    <string name="TextView1" tools:ignore="UnusedResources">Text1</string>
+    <string name="TextView2" tools:ignore="UnusedResources">Text2</string>
+    <string name="ReviewImage" tools:ignore="UnusedResources">ReviewImage</string>
     <string name="details">details</string>
     <string name="Description">description</string>
     <string name="RatingImage">RatingImage</string>
@@ -67,6 +67,7 @@
     <string name="username">username</string>
     <string name="password">password</string>
     <string name="login">Login</string>
+    <string name = "logo" > msufculogo</string>
 
     <string-array name="sort_by">
         <item>Sort By</item>

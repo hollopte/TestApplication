@@ -38,8 +38,8 @@ public class CustomListAdapter extends ArrayAdapter<String> {
 
         txtTitle.setText(itemname[position]);
         imageView.setImageResource((imgid[position]));
-        extratxt.setText("Description "+itemname[position]);
+        extratxt.setText("Description" +itemname[position]);
         return rowView;
 
-    };
+    }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,45 +8,68 @@
     tools:context="com.example.cse498.testapplication.MainActivity"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="@color/colorPrimary"
+    android:id="@+id/homeLayout"
+    tools:ignore="Overdraw">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="@string/credit_cards"
         android:id="@+id/creditBtn"
+        android:onClick="OnClick"
+
         android:layout_weight="1"
-        android:onClick="OnClick" />
+        android:drawableTop="@mipmap/creditcards"
+        android:background="@color/colorPrimary"
+         />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="@string/loans"
         android:id="@+id/loansBtn"
+        android:text="@string/loans"
+        android:onClick="OnClick"
+
         android:layout_weight="1"
-        android:onClick="OnClick" />
+        android:drawableTop="@mipmap/car_icon"
+        android:background="@color/colorPrimary"
+         />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="@string/accounts"
         android:id="@+id/accountBtn"
+        android:text="@string/accounts"
+        android:onClick="OnClick"
+
         android:layout_weight="1"
-        android:onClick="OnClick" />
+        android:drawableTop="@mipmap/openaccount"
+        android:background="@color/colorPrimary"
+         />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="@string/certificates"
         android:id="@+id/certificateBtn"
+        android:onClick="OnClick"
+
         android:layout_weight="1"
-        android:onClick="OnClick" />
+        android:drawableTop="@mipmap/house_icon"
+        android:background="@color/colorPrimary"
+         />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="@string/services"
         android:id="@+id/serviceBtn"
+        android:text="@string/services"
+        android:onClick="OnClick"
+
         android:layout_weight="1"
-        android:onClick="OnClick" />
+        android:drawableTop="@mipmap/services"
+        android:background="@color/colorPrimary"
+        />
 </LinearLayout>
