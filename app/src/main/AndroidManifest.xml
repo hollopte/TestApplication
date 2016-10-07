@@ -17,7 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".display_products" />
+        <activity
+            android:name=".display_products"
+            android:permission="android.permission.INTERNET" />
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -30,6 +32,10 @@
         <activity android:name=".activity_write_review" />
         <activity android:name=".activity_all_reviews" />
         <activity android:name=".activity_login" />
+        <activity
+            android:name=".activity_preference"
+            android:permission="android.permission.INTERNET" />
+        <activity android:name=".ParseJSON"></activity>
     </application>
 
 </manifest>

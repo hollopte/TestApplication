@@ -68,7 +68,12 @@
     <string name="password">password</string>
     <string name="login">Login</string>
     <string name="logo"> msufculogo</string>
-    <string name = "Get">Get</string>
+    <string name="button_get">button_get</string>
+    <string name="textview_id">textview_id</string>
+    <string name="textview_username">textview_username</string>
+    <string name="textview_password">textview_password</string>
+    <string name="button_previous">button_previous</string>
+    <string name="button_next">button_next</string>
 
     <string-array name="sort_by">
         <item>Sort By</item>
