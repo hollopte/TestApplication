@@ -1,21 +1,12 @@
 package com.example.cse498.testapplication;
 
 import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MenuInflater;
+import android.view.View;
 import android.widget.Toast;
-
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
 
 
 public class MainActivity extends AppCompatActivity
@@ -57,8 +48,8 @@ public class MainActivity extends AppCompatActivity
             return true;
         } else if (id == R.id.Preferences){
             Toast.makeText(getApplicationContext(), "Not Implemented Yet!", Toast.LENGTH_SHORT).show();
-            //Intent click_intent = new Intent(MainActivity.this,Connect_to_database.class);
-            //startActivity(click_intent);
+            Intent click_intent = new Intent(MainActivity.this,activity_preference.class);
+            startActivity(click_intent);
             //MainActivity.this.finish();
 
             return true;

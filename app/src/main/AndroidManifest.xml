@@ -35,7 +35,8 @@
         <activity
             android:name=".activity_preference"
             android:permission="android.permission.INTERNET" />
-        <activity android:name=".ParseJSON"></activity>
+        <activity android:name=".ParseJSON">
+        </activity>
     </application>
 
 </manifest>

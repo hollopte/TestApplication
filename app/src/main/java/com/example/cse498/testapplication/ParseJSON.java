@@ -1,8 +1,8 @@
 package com.example.cse498.testapplication;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,22 +15,22 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 
-public class ParseJSON extends ActionBarActivity implements View.OnClickListener{
+public class ParseJSON extends AppCompatActivity implements View.OnClickListener{
 
     private String myJSONString;
 
-    private static final String JSON_ARRAY ="result";
+    private static final String JSON_ARRAY ="category";
     private static final String ID = "id";
-    private static final String USERNAME= "name";
-    private static final String PASSWORD = "rating";
+    private static final String NAME = "name";
+    private static final String RATING = "rating";
 
     private JSONArray users = null;
 
     private int TRACK = 0;
 
     private EditText editTextId;
-    private EditText editTextUserName;
-    private EditText editTextPassword;
+    private EditText editTextName;
+    private EditText editTextRating;
 
     Button btnPrev;
     Button btnNext;
@@ -45,8 +45,8 @@ public class ParseJSON extends ActionBarActivity implements View.OnClickListener
 
 
         editTextId = (EditText) findViewById(R.id.editTextID);
-        editTextUserName = (EditText) findViewById(R.id.editTextUsername);
-        editTextPassword = (EditText) findViewById(R.id.editTextPassword);
+        editTextName = (EditText) findViewById(R.id.editTextUsername);
+        editTextRating = (EditText) findViewById(R.id.editTextPassword);
 
         btnPrev = (Button) findViewById(R.id.buttonPrev);
         btnNext = (Button) findViewById(R.id.buttonNext);
@@ -89,8 +89,8 @@ public class ParseJSON extends ActionBarActivity implements View.OnClickListener
             JSONObject jsonObject = users.getJSONObject(TRACK);
 
             editTextId.setText(jsonObject.getString(ID));
-            editTextUserName.setText(jsonObject.getString(USERNAME));
-            editTextPassword.setText(jsonObject.getString(PASSWORD));
+            editTextName.setText(jsonObject.getString(NAME));
+            editTextRating.setText(jsonObject.getString(RATING));
         } catch (JSONException e) {
             e.printStackTrace();
         }
