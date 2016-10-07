@@ -63,8 +63,8 @@ public class ParseJSON extends AppCompatActivity implements View.OnClickListener
 
     private void extractJSON(){
         try {
-            JSONObject jsonObject = new JSONObject(myJSONString);
-            users = jsonObject.getJSONArray(JSON_ARRAY);
+            JSONArray jsonObject = new JSONArray(myJSONString);
+            users = jsonObject;
         } catch (JSONException e) {
             e.printStackTrace();
         }
