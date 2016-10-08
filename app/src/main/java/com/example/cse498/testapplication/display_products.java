@@ -1,38 +1,61 @@
 package com.example.cse498.testapplication;
 
-import android.app.Activity;
-        import android.app.ListActivity;
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-        import android.widget.AdapterView;
-        import android.widget.AdapterView.OnItemClickListener;
-        import android.widget.ArrayAdapter;
-        import android.widget.ListView;
-import android.widget.Spinner;
-import android.widget.Toast;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Spinner;
+import android.widget.Toast;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class display_products extends AppCompatActivity {
 
     private ListView list;
-    private String[] itemname ={
-            "Credit Card",
-            "Credit Card Visa",
+    private String[] itemname ={"c","c"
+            /*"Credit Card",      // Placeholder for JSON products, name
+            "Credit Card Visa",*/
     };
+
+    private List<String> productslist = new ArrayList<String>();
 
     private Integer[] imgid={
             R.mipmap.creditcards,
             R.mipmap.creditcards2
     };
 
+
+    public static final String JSON_URL = "http://35.9.22.107/RatingSystem/newServerTest.php";
+    private static final String NAME = "name";
+    private int TRACK = 0;
+    private JSONArray products = null;
+    private String myJSONString;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_products);
+
+        getJSON(JSON_URL); // does nothing right now, just creates productlist
+        // Mostly because the custom list is already made before this gets done
 
         CustomListAdapter adapter=new CustomListAdapter(this, itemname, imgid);
         list=(ListView)findViewById(R.id.list);
@@ -99,5 +122,59 @@ public class display_products extends AppCompatActivity {
 
     }
 
+    private void getJSON(String url) {
+        class GetJSON extends AsyncTask<String, Void, String> {
+            ProgressDialog loading;
 
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                loading = ProgressDialog.show(display_products.this, "Please Wait...", null, true, true);
+            }
+
+            @Override
+            protected String doInBackground(String... params) {
+
+                String uri = params[0];
+
+                BufferedReader bufferedReader = null;
+                try {
+                    URL url = new URL(uri);
+                    HttpURLConnection con = (HttpURLConnection) url.openConnection();
+                    StringBuilder sb = new StringBuilder();
+
+                    bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
+
+                    String json;
+                    while ((json = bufferedReader.readLine()) != null) {
+                        sb.append(json + "\n");
+                    }
+
+                    return sb.toString().trim();
+
+                } catch (Exception e) {
+                    return null;
+                }
+
+            }
+
+            @Override
+            protected void onPostExecute(String s) {
+                super.onPostExecute(s);
+                loading.dismiss();
+                myJSONString = s;
+                try {
+                    JSONArray products = new JSONArray(myJSONString); // This should be a while loop
+                    JSONObject jsonObj = products.getJSONObject(TRACK); // but not sure what to
+                    productslist.add(jsonObj.getString(NAME)); // make the exit cond because
+                    jsonObj = products.getJSONObject(++TRACK); // the try catch will break
+                    productslist.add(jsonObj.getString(NAME)); // out and do nothing if you
+                } catch (JSONException e) {                    // get a null JSONObject
+                    e.printStackTrace();
+                }
+            }
+        }
+        GetJSON gj = new GetJSON();
+        gj.execute(url);
+    }
 }
