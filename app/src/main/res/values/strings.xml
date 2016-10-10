@@ -69,6 +69,7 @@
     <string name="login">Login</string>
     <string name="logo"> msufculogo</string>
     <string name="button_get">button_get</string>
+    <string name="ParseJSON">Parse JSON</string>
     <string name="textview_id">textview_id</string>
     <string name="textview_username">textview_username</string>
     <string name="textview_password">textview_password</string>

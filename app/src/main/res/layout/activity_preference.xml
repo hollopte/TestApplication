@@ -16,7 +16,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:maxLines="20"
         android:scrollbars="vertical"
@@ -25,7 +25,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Parse JSON"
+        android:text="@string/ParseJSON"
         android:id="@+id/buttonParse" />
 
 

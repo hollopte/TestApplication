@@ -14,6 +14,7 @@
         android:text="@string/textview_id" />
 
     <EditText
+        android:inputType=""
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextID" />
@@ -24,6 +25,7 @@
         android:text="@string/textview_username" />
 
     <EditText
+        android:inputType=""
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextUsername" />
@@ -34,6 +36,7 @@
         android:text="@string/textview_password" />
 
     <EditText
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextPassword" />
